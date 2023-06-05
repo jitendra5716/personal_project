@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/d11bc9d4e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="profile.css" />
+    <title>Artist Profile</title>
+  </head>
+  <body>
+    <div id="project">
+      <nav class="navbar navbar-expand-lg mb-4 pt-4">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3" href="#"
+            ><img
+              src="images/sodapdf-converted.png"
+              style="height: 50px; width: 50px"
+              class="bg-danger"
+              alt=""
+          /></a>
+          <span class="me-5 text-white fs-5"
+            >Ninja <br />
+            Studio</span
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Favourites</a
+                >
+              </li>
+            </ul>
+            <form
+              class="d-flex iconDiv"
+              role="search"
+              style="width: 340px; margin-right: 40px"
+            >
+              <i
+                class="fa-solid fa-magnifying-glass icon"
+                style="cursor: pointer"
+              ></i>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i
+                class="fa-solid fa-microphone-lines mic-icon"
+                style="cursor: pointer"
+              ></i>
+            </form>
+            <img
+              src="images/self_img1.jpg"
+              style="
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-right: 60px;
+              "
+              alt="self_img"
+            />
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-9">
+            <div class="container-fluid">
+              <div class="card mb-3 profileContainer" style="width: 100%">
+                <div class="row g-0">
+                  <div class="col-md-5 singerImgDiv">
+                    <img
+                      src="images/09.jpg"
+                      class="img-fluid rounded-start"
+                      alt="SingerImg"
+                    />
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body profileBody" style="margin-top: 2.4rem; margin-right: 0.6rem;">
+                      <h3
+                        class="card-title text-white"
+                        style="margin-bottom: 0px"
+                      >
+                        Cold Play
+                      </h3>
+                      <p style="color: lightgray">British Band</p>
+                      <p class="card-text" style="color: #ced4da;text-align: justify;">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Iure repellat ad natus
+                        placeat, inventore perferendis.
+                      </p>
+                      <button type="submit" id="playAllBtn">PlayAll</button>
+                      <div style="display: inline-block; color: #ced4da">
+                      <a href="#" style="text-decoration: none;color: white;font-size: 1.1rem;"> Follow</a>
+                      </div>
+                      <p style="font-size: 0.8rem;color: lightgray; margin: 8px 6px;">24x7 Tracks | 128 Albums</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid d-flex flex-column">
+              <div class="container-fluid d-flex align-items-center" style="background-color: #0d2946;">
+                <span style="width: 5%; color: white; font-size: 1.1rem; padding-left: 12px;">01</span>
+                <div class="card mb-3 music-card" style="width: 95%;margin: 10px;">
+                  <div class="row g-0" style="margin-right: 0px;">
+                    <div class="col-md-1">
+                      <div class="imgDiv">
+                        <img
+                          src="images/04.jpg"
+                          class="img-fluid rounded-start"
+                          alt="img"
+                        />
+
+                        <button
+                          class="playBtn"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom"
+                          aria-controls="offcanvasBottom"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                      </div>
+                      <div
+                        class="offcanvas offcanvas-bottom popupMusicDiv"
+                        tabindex="-1"
+                        id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <div
+                            class="card mb-3 music-card offCanvasMusicDiv"
+                            style="width: 30%"
+                          >
+                            <div class="row g-0">
+                              <div class="col-md-4 imgDiv offCanvasMusic">
+                                <img
+                                  src="images/01.jpg"
+                                  class="img-fluid rounded-start"
+                                  alt="..."
+                                />
+                                <button
+                                  class="playBtn2"
+                                  type="button"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasBottom"
+                                  aria-controls="offcanvasBottom"
+                                >
+                                  <i class="fa-solid fa-play"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <p class="card-text onismText">
+                                    onism by John
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-secondary"
+                                      >John lennon</small
+                                    >
+                                  </p>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-ban"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="audioContainer">
+                            <audio
+                              src="audio/Saiyara-Tu-Saiyara.mp3"
+                              class="bg-dark"
+                              controls
+                            ></audio>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-white closeBtn"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-11 onismDiv">
+                      <div class="card-body">
+                        <p class="card-text onismText">Mirage</p>
+                        <p class="card-text">
+                          <small class="text-secondary">Else</small>
+                        </p>
+                      </div>
+                      <i class="fa-regular fa-heart profileHeartSymbol"></i>
+                      <i class="fa-solid fa-plus profilePlusSymbol"></i>
+                      <p class="fourPointFour text-secondary">4.44</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid d-flex flex-column">
+                <div class="container-fluid d-flex align-items-center" style="background-color: #0d2946; margin-top: 1rem;">
+                  <span style="width: 5%; color: white; font-size: 1.1rem; padding-left: 12px;">02</span>
+                  <div class="card mb-3 music-card" style="width: 95%;margin: 10px;">
+                    <div class="row g-0" style="margin-right: 0px;">
+                      <div class="col-md-1">
+                        <div class="imgDiv">
+                          <img
+                            src="images/01.jpg"
+                            class="img-fluid rounded-start"
+                            alt="img"
+                          />
+  
+                          <button
+                            class="playBtn"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom"
+                            aria-controls="offcanvasBottom"
+                          >
+                            <i class="fa-solid fa-play"></i>
+                          </button>
+                        </div>
+                        <div
+                          class="offcanvas offcanvas-bottom popupMusicDiv"
+                          tabindex="-1"
+                          id="offcanvasBottom"
+                          aria-labelledby="offcanvasBottomLabel"
+                        >
+                          <div class="offcanvas-header">
+                            <div
+                              class="card mb-3 music-card offCanvasMusicDiv"
+                              style="width: 30%"
+                            >
+                              <div class="row g-0">
+                                <div class="col-md-4 imgDiv offCanvasMusic">
+                                  <img
+                                    src="images/01.jpg"
+                                    class="img-fluid rounded-start"
+                                    alt="..."
+                                  />
+                                  <button
+                                    class="playBtn2"
+                                    type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasBottom"
+                                    aria-controls="offcanvasBottom"
+                                  >
+                                    <i class="fa-solid fa-play"></i>
+                                  </button>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <p class="card-text onismText">
+                                      onism by John
+                                    </p>
+                                    <p class="card-text">
+                                      <small class="text-secondary"
+                                        >John lennon</small
+                                      >
+                                    </p>
+                                  </div>
+                                  <i class="fa-regular fa-heart"></i>
+                                  <i class="fa-solid fa-ban"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="audioContainer">
+                              <audio
+                                src="audio/Saiyara-Tu-Saiyara.mp3"
+                                class="bg-dark"
+                                controls
+                              ></audio>
+                            </div>
+                            <button
+                              type="button"
+                              class="btn-close btn-close-white closeBtn"
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-11 onismDiv">
+                        <div class="card-body">
+                          <p class="card-text onismText">Worry Bout us</p>
+                          <p class="card-text">
+                            <small class="text-secondary">Rosie Lowe</small>
+                          </p>
+                        </div>
+                        <i class="fa-regular fa-heart profileHeartSymbol"></i>
+                        <i class="fa-solid fa-plus profilePlusSymbol"></i>
+                        <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid d-flex align-items-center" style="background-color: #0d2946; margin-top: 1rem;">
+                    <span style="width: 5%; color: white; font-size: 1.1rem; padding-left: 12px;">03</span>
+                    <div class="card mb-3 music-card" style="width: 95%;margin: 10px;">
+                      <div class="row g-0" style="margin-right: 0px;">
+                        <div class="col-md-1">
+                          <div class="imgDiv">
+                            <img
+                              src="images/queueImg/03.jpg"
+                              class="img-fluid rounded-start"
+                              alt="img"
+                            />
+    
+                            <button
+                              class="playBtn"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasBottom"
+                              aria-controls="offcanvasBottom"
+                            >
+                              <i class="fa-solid fa-play"></i>
+                            </button>
+                          </div>
+                          <div
+                            class="offcanvas offcanvas-bottom popupMusicDiv"
+                            tabindex="-1"
+                            id="offcanvasBottom"
+                            aria-labelledby="offcanvasBottomLabel"
+                          >
+                            <div class="offcanvas-header">
+                              <div
+                                class="card mb-3 music-card offCanvasMusicDiv"
+                                style="width: 30%"
+                              >
+                                <div class="row g-0">
+                                  <div class="col-md-4 imgDiv offCanvasMusic">
+                                    <img
+                                      src="images/01.jpg"
+                                      class="img-fluid rounded-start"
+                                      alt="..."
+                                    />
+                                    <button
+                                      class="playBtn2"
+                                      type="button"
+                                      data-bs-toggle="offcanvas"
+                                      data-bs-target="#offcanvasBottom"
+                                      aria-controls="offcanvasBottom"
+                                    >
+                                      <i class="fa-solid fa-play"></i>
+                                    </button>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <p class="card-text onismText">
+                                        onism by John
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-secondary"
+                                          >John lennon</small
+                                        >
+                                      </p>
+                                    </div>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-ban"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="audioContainer">
+                                <audio
+                                  src="audio/Saiyara-Tu-Saiyara.mp3"
+                                  class="bg-dark"
+                                  controls
+                                ></audio>
+                              </div>
+                              <button
+                                type="button"
+                                class="btn-close btn-close-white closeBtn"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-11 onismDiv">
+                          <div class="card-body">
+                            <p class="card-text onismText">New Skin</p>
+                            <p class="card-text">
+                              <small class="text-secondary">Flume</small>
+                            </p>
+                          </div>
+                          <i class="fa-regular fa-heart profileHeartSymbol"></i>
+                          <i class="fa-solid fa-plus profilePlusSymbol"></i>
+                          <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid d-flex align-items-center" style="background-color: #0d2946; margin-top: 1rem;">
+                    <span style="width: 5%; color: white; font-size: 1.1rem; padding-left: 12px;">04</span>
+                    <div class="card mb-3 music-card" style="width: 95%;margin: 10px;">
+                      <div class="row g-0" style="margin-right: 0px;">
+                        <div class="col-md-1">
+                          <div class="imgDiv">
+                            <img
+                              src="images/01.jpg"
+                              class="img-fluid rounded-start"
+                              alt="img"
+                            />
+    
+                            <button
+                              class="playBtn"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasBottom"
+                              aria-controls="offcanvasBottom"
+                            >
+                              <i class="fa-solid fa-play"></i>
+                            </button>
+                          </div>
+                          <div
+                            class="offcanvas offcanvas-bottom popupMusicDiv"
+                            tabindex="-1"
+                            id="offcanvasBottom"
+                            aria-labelledby="offcanvasBottomLabel"
+                          >
+                            <div class="offcanvas-header">
+                              <div
+                                class="card mb-3 music-card offCanvasMusicDiv"
+                                style="width: 30%"
+                              >
+                                <div class="row g-0">
+                                  <div class="col-md-4 imgDiv offCanvasMusic">
+                                    <img
+                                      src="images/01.jpg"
+                                      class="img-fluid rounded-start"
+                                      alt="..."
+                                    />
+                                    <button
+                                      class="playBtn2"
+                                      type="button"
+                                      data-bs-toggle="offcanvas"
+                                      data-bs-target="#offcanvasBottom"
+                                      aria-controls="offcanvasBottom"
+                                    >
+                                      <i class="fa-solid fa-play"></i>
+                                    </button>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <p class="card-text onismText">
+                                        onism by John
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-secondary"
+                                          >John lennon</small
+                                        >
+                                      </p>
+                                    </div>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-ban"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="audioContainer">
+                                <audio
+                                  src="audio/Saiyara-Tu-Saiyara.mp3"
+                                  class="bg-dark"
+                                  controls
+                                ></audio>
+                              </div>
+                              <button
+                                type="button"
+                                class="btn-close btn-close-white closeBtn"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-11 onismDiv">
+                          <div class="card-body">
+                            <p class="card-text onismText">Worry Bout us</p>
+                            <p class="card-text">
+                              <small class="text-secondary">Rosie Lowe</small>
+                            </p>
+                          </div>
+                          <i class="fa-regular fa-heart profileHeartSymbol"></i>
+                          <i class="fa-solid fa-plus profilePlusSymbol"></i>
+                          <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid d-flex align-items-center" style="background-color: #0d2946; margin-top: 1rem;">
+                    <span style="width: 5%; color: white; font-size: 1.1rem; padding-left: 12px;">05</span>
+                    <div class="card mb-3 music-card" style="width: 95%;margin: 10px;">
+                      <div class="row g-0" style="margin-right: 0px;">
+                        <div class="col-md-1">
+                          <div class="imgDiv">
+                            <img
+                              src="images/queueImg/03.jpg"
+                              class="img-fluid rounded-start"
+                              alt="img"
+                            />
+    
+                            <button
+                              class="playBtn"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasBottom"
+                              aria-controls="offcanvasBottom"
+                            >
+                              <i class="fa-solid fa-play"></i>
+                            </button>
+                          </div>
+                          <div
+                            class="offcanvas offcanvas-bottom popupMusicDiv"
+                            tabindex="-1"
+                            id="offcanvasBottom"
+                            aria-labelledby="offcanvasBottomLabel"
+                          >
+                            <div class="offcanvas-header">
+                              <div
+                                class="card mb-3 music-card offCanvasMusicDiv"
+                                style="width: 30%"
+                              >
+                                <div class="row g-0">
+                                  <div class="col-md-4 imgDiv offCanvasMusic">
+                                    <img
+                                      src="images/01.jpg"
+                                      class="img-fluid rounded-start"
+                                      alt="..."
+                                    />
+                                    <button
+                                      class="playBtn2"
+                                      type="button"
+                                      data-bs-toggle="offcanvas"
+                                      data-bs-target="#offcanvasBottom"
+                                      aria-controls="offcanvasBottom"
+                                    >
+                                      <i class="fa-solid fa-play"></i>
+                                    </button>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <p class="card-text onismText">
+                                        onism by John
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-secondary"
+                                          >John lennon</small
+                                        >
+                                      </p>
+                                    </div>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-ban"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="audioContainer">
+                                <audio
+                                  src="audio/Saiyara-Tu-Saiyara.mp3"
+                                  class="bg-dark"
+                                  controls
+                                ></audio>
+                              </div>
+                              <button
+                                type="button"
+                                class="btn-close btn-close-white closeBtn"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-11 onismDiv">
+                          <div class="card-body">
+                            <p class="card-text onismText">New Skin</p>
+                            <p class="card-text">
+                              <small class="text-secondary">Flume</small>
+                            </p>
+                          </div>
+                          <i class="fa-regular fa-heart profileHeartSymbol"></i>
+                          <i class="fa-solid fa-plus profilePlusSymbol"></i>
+                          <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid d-flex align-items-center" style="background-color: #0d2946; margin-top: 1rem;">
+                    <span style="width: 5%; color: white; font-size: 1.1rem; padding-left: 12px;">06</span>
+                    <div class="card mb-3 music-card" style="width: 95%;margin: 10px;">
+                      <div class="row g-0" style="margin-right: 0px;">
+                        <div class="col-md-1">
+                          <div class="imgDiv">
+                            <img
+                              src="images/party/03.jpg"
+                              class="img-fluid rounded-start"
+                              alt="img"
+                            />
+    
+                            <button
+                              class="playBtn"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasBottom"
+                              aria-controls="offcanvasBottom"
+                            >
+                              <i class="fa-solid fa-play"></i>
+                            </button>
+                          </div>
+                          <div
+                            class="offcanvas offcanvas-bottom popupMusicDiv"
+                            tabindex="-1"
+                            id="offcanvasBottom"
+                            aria-labelledby="offcanvasBottomLabel"
+                          >
+                            <div class="offcanvas-header">
+                              <div
+                                class="card mb-3 music-card offCanvasMusicDiv"
+                                style="width: 30%"
+                              >
+                                <div class="row g-0">
+                                  <div class="col-md-4 imgDiv offCanvasMusic">
+                                    <img
+                                      src="images/01.jpg"
+                                      class="img-fluid rounded-start"
+                                      alt="..."
+                                    />
+                                    <button
+                                      class="playBtn2"
+                                      type="button"
+                                      data-bs-toggle="offcanvas"
+                                      data-bs-target="#offcanvasBottom"
+                                      aria-controls="offcanvasBottom"
+                                    >
+                                      <i class="fa-solid fa-play"></i>
+                                    </button>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <p class="card-text onismText">
+                                        onism by John
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-secondary"
+                                          >John lennon</small
+                                        >
+                                      </p>
+                                    </div>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-ban"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="audioContainer">
+                                <audio
+                                  src="audio/Saiyara-Tu-Saiyara.mp3"
+                                  class="bg-dark"
+                                  controls
+                                ></audio>
+                              </div>
+                              <button
+                                type="button"
+                                class="btn-close btn-close-white closeBtn"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-11 onismDiv">
+                          <div class="card-body">
+                            <p class="card-text onismText">Worry Bout us</p>
+                            <p class="card-text">
+                              <small class="text-secondary">Rosie Lowe</small>
+                            </p>
+                          </div>
+                          <i class="fa-regular fa-heart profileHeartSymbol"></i>
+                          <i class="fa-solid fa-plus profilePlusSymbol"></i>
+                          <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-3 ">
+          <div class="container-fluid">
+            <div class="SimilarArtistHeading">
+              <h5 class="text-white">Similar Artist</h5>
+              <p class="viewAll">View All</p>
+            </div>
+            <div class="similarArtistMain">
+              <div class="card mb-3 music-card3" style="width: 100%;margin-left: 0px;margin-top: 24px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <div class="imgDiv3">
+                      <img
+                        src="images/singerTwo/05.jpg"
+                        class="img-fluid rounded-start"
+                        alt="img"
+                      />
+
+                      <button
+                        class="playBtn3"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"
+                      >
+                        <i class="fa-solid fa-play"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="offcanvas offcanvas-bottom popupMusicDiv"
+                      tabindex="-1"
+                      id="offcanvasBottom"
+                      aria-labelledby="offcanvasBottomLabel"
+                    >
+                      <div class="offcanvas-header">
+                        <div class="card mb-3 music-card offCanvasMusicDiv" style="width: 30%">
+                          <div class="row g-0">
+                            <div class="col-md-4 imgDiv  offCanvasMusic">
+                              <img
+                                src="images/09.jpg"
+                                class="img-fluid rounded-start"
+                                alt="..."
+                              />
+                              <button
+                              class="playBtn2 "
+                             type="button"
+                               data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom"
+                                aria-controls="offcanvasBottom"
+                                 >
+                              <i class="fa-solid fa-play"></i>
+                             </button>
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <p class="card-text onismText">onism by John</p>
+                                <p class="card-text">
+                                  <small class="text-secondary">John lennon</small>
+                                </p>
+                              </div>
+                              <i class="fa-regular fa-heart"></i>
+                              <i class="fa-solid fa-ban"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="audioContainer">
+                          <audio src="audio/Saiyara-Tu-Saiyara.mp3" class="bg-dark" controls></audio>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn-close btn-close-white closeBtn"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 onismDiv">
+                    <div class="card-body">
+                      <p class="card-text">Imagine Dragons</p>
+                      <p class="card-text">
+                        <small class="text-secondary">Pop Band</small>
+                      </p>
+                    </div>
+                    <div class="dropdown dotIcon btn-group dropstart">
+                      <button
+                        class="dotIconBtn"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </button>
+                      <ul class="dropdown-menu actionMenu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-play"></i>
+                            <span>Play Now</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-plus"></i
+                            ><span>Add To Queue</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-bookmark"></i>Add To
+                            Favourites</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-circle-info"></i>Get
+                            Info</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="fourPointFourQueue">4.44</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 music-card3" style="width: 100%;margin-left: 0px;margin-top: 24px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <div class="imgDiv3">
+                      <img
+                        src="images/singerTwo/05.jpg"
+                        class="img-fluid rounded-start"
+                        alt="img"
+                      />
+
+                      <button
+                        class="playBtn3"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"
+                      >
+                        <i class="fa-solid fa-play"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="offcanvas offcanvas-bottom popupMusicDiv"
+                      tabindex="-1"
+                      id="offcanvasBottom"
+                      aria-labelledby="offcanvasBottomLabel"
+                    >
+                      <div class="offcanvas-header">
+                        <div class="card mb-3 music-card offCanvasMusicDiv" style="width: 30%">
+                          <div class="row g-0">
+                            <div class="col-md-4 imgDiv  offCanvasMusic">
+                              <img
+                                src="images/09.jpg"
+                                class="img-fluid rounded-start"
+                                alt="..."
+                              />
+                              <button
+                              class="playBtn2 "
+                             type="button"
+                               data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom"
+                                aria-controls="offcanvasBottom"
+                                 >
+                              <i class="fa-solid fa-play"></i>
+                             </button>
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <p class="card-text onismText">onism by John</p>
+                                <p class="card-text">
+                                  <small class="text-secondary">John lennon</small>
+                                </p>
+                              </div>
+                              <i class="fa-regular fa-heart"></i>
+                              <i class="fa-solid fa-ban"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="audioContainer">
+                          <audio src="audio/Saiyara-Tu-Saiyara.mp3" class="bg-dark" controls></audio>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn-close btn-close-white closeBtn"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 onismDiv">
+                    <div class="card-body">
+                      <p class="card-text ">Imagine Dragons</p>
+                      <p class="card-text">
+                        <small class="text-secondary">Pop Band</small>
+                      </p>
+                    </div>
+                    <div class="dropdown dotIcon btn-group dropstart">
+                      <button
+                        class="dotIconBtn"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </button>
+                      <ul class="dropdown-menu actionMenu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-play"></i>
+                            <span>Play Now</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-plus"></i
+                            ><span>Add To Queue</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-bookmark"></i>Add To
+                            Favourites</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-circle-info"></i>Get
+                            Info</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="fourPointFourQueue">4.44</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 music-card3" style="width: 100%;margin-left: 0px;margin-top: 24px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <div class="imgDiv3">
+                      <img
+                        src="images/singerTwo/05.jpg"
+                        class="img-fluid rounded-start"
+                        alt="img"
+                      />
+
+                      <button
+                        class="playBtn3"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"
+                      >
+                        <i class="fa-solid fa-play"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="offcanvas offcanvas-bottom popupMusicDiv"
+                      tabindex="-1"
+                      id="offcanvasBottom"
+                      aria-labelledby="offcanvasBottomLabel"
+                    >
+                      <div class="offcanvas-header">
+                        <div class="card mb-3 music-card offCanvasMusicDiv" style="width: 30%">
+                          <div class="row g-0">
+                            <div class="col-md-4 imgDiv  offCanvasMusic">
+                              <img
+                                src="images/09.jpg"
+                                class="img-fluid rounded-start"
+                                alt="..."
+                              />
+                              <button
+                              class="playBtn2 "
+                             type="button"
+                               data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom"
+                                aria-controls="offcanvasBottom"
+                                 >
+                              <i class="fa-solid fa-play"></i>
+                             </button>
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <p class="card-text onismText">onism by John</p>
+                                <p class="card-text">
+                                  <small class="text-secondary">John lennon</small>
+                                </p>
+                              </div>
+                              <i class="fa-regular fa-heart"></i>
+                              <i class="fa-solid fa-ban"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="audioContainer">
+                          <audio src="audio/Saiyara-Tu-Saiyara.mp3" class="bg-dark" controls></audio>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn-close btn-close-white closeBtn"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 onismDiv">
+                    <div class="card-body">
+                      <p class="card-text">Imagine Dragons</p>
+                      <p class="card-text">
+                        <small class="text-secondary">Pop Band</small>
+                      </p>
+                    </div>
+                    <div class="dropdown dotIcon btn-group dropstart">
+                      <button
+                        class="dotIconBtn"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </button>
+                      <ul class="dropdown-menu actionMenu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-play"></i>
+                            <span>Play Now</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-plus"></i
+                            ><span>Add To Queue</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-bookmark"></i>Add To
+                            Favourites</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-circle-info"></i>Get
+                            Info</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="fourPointFourQueue">4.44</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid my-4">
+            <div class="SimilarArtistHeading">
+              <h5 class="text-white">Recently Played</h5>
+              <p class="viewAll">View All</p>
+            </div>
+            <div class="similarArtistMain">
+              <div class="container-fluid d-flex align-items-center">
+                <span style="width: 10%; color: white; font-size: 1.1rem; padding: 8px 0px;">01</span>
+                <div class="card mb-3 music-card2" style="width: 90%;margin: 10px;">
+                  <div class="row g-0" style="margin-right: 0px;">
+                    <div class="col-md-3">
+                      <div class="imgDiv2">
+                        <img
+                          src="images/09.jpg"
+                          class="img-fluid rounded-start"
+                          alt="img"
+                        />
+
+                        <button
+                          class="playBtn4"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom"
+                          aria-controls="offcanvasBottom"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                      </div>
+                      <div
+                        class="offcanvas offcanvas-bottom popupMusicDiv"
+                        tabindex="-1"
+                        id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <div
+                            class="card mb-3 music-card offCanvasMusicDiv"
+                            style="width: 30%"
+                          >
+                            <div class="row g-0">
+                              <div class="col-md-4 imgDiv offCanvasMusic">
+                                <img
+                                  src="images/01.jpg"
+                                  class="img-fluid rounded-start"
+                                  alt="..."
+                                />
+                                <button
+                                  class="playBtn2"
+                                  type="button"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasBottom"
+                                  aria-controls="offcanvasBottom"
+                                >
+                                  <i class="fa-solid fa-play"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <p class="card-text onismText">
+                                    onism by John
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-secondary"
+                                      >John lennon</small
+                                    >
+                                  </p>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-ban"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="audioContainer">
+                            <audio
+                              src="audio/Saiyara-Tu-Saiyara.mp3"
+                              class="bg-dark"
+                              controls
+                            ></audio>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-white closeBtn"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 onismDiv">
+                      <div class="card-body">
+                        <p class="card-text onismText">Mirage</p>
+                        <p class="card-text">
+                          <small class="text-secondary">Else</small>
+                        </p>
+                      </div>
+                      <i class="fa-regular fa-heart profileHeartSymbol2"></i>
+                      <!-- <i class="fa-solid fa-plus profilePlusSymbol"></i> -->
+                      <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid d-flex align-items-center">
+                <span style="width: 10%; color: white; font-size: 1.1rem; padding: 8px 0px;">02</span>
+                <div class="card mb-3 music-card2" style="width: 90%;margin: 10px;">
+                  <div class="row g-0" style="margin-right: 0px;">
+                    <div class="col-md-3">
+                      <div class="imgDiv2">
+                        <img
+                          src="images/party/03.jpg"
+                          class="img-fluid rounded-start"
+                          alt="img"
+                        />
+
+                        <button
+                          class="playBtn4"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom"
+                          aria-controls="offcanvasBottom"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                      </div>
+                      <div
+                        class="offcanvas offcanvas-bottom popupMusicDiv"
+                        tabindex="-1"
+                        id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <div
+                            class="card mb-3 music-card offCanvasMusicDiv"
+                            style="width: 30%"
+                          >
+                            <div class="row g-0">
+                              <div class="col-md-4 imgDiv offCanvasMusic">
+                                <img
+                                  src="images/01.jpg"
+                                  class="img-fluid rounded-start"
+                                  alt="..."
+                                />
+                                <button
+                                  class="playBtn2"
+                                  type="button"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasBottom"
+                                  aria-controls="offcanvasBottom"
+                                >
+                                  <i class="fa-solid fa-play"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <p class="card-text onismText">
+                                    onism by John
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-secondary"
+                                      >John lennon</small
+                                    >
+                                  </p>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-ban"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="audioContainer">
+                            <audio
+                              src="audio/Saiyara-Tu-Saiyara.mp3"
+                              class="bg-dark"
+                              controls
+                            ></audio>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-white closeBtn"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 onismDiv">
+                      <div class="card-body">
+                        <p class="card-text onismText">Wory Bout us</p>
+                        <p class="card-text">
+                          <small class="text-secondary">Rosie Lowe</small>
+                        </p>
+                      </div>
+                      <i class="fa-regular fa-heart profileHeartSymbol2"></i>
+                      <!-- <i class="fa-solid fa-plus profilePlusSymbol"></i> -->
+                      <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid d-flex align-items-center">
+                <span style="width: 10%; color: white; font-size: 1.1rem; padding: 8px 0px;">03</span>
+                <div class="card mb-3 music-card2" style="width: 90%;margin: 10px;">
+                  <div class="row g-0" style="margin-right: 0px;">
+                    <div class="col-md-3">
+                      <div class="imgDiv2">
+                        <img
+                          src="images/singerTwo/06.jpg"
+                          class="img-fluid rounded-start"
+                          alt="img"
+                        />
+
+                        <button
+                          class="playBtn4"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom"
+                          aria-controls="offcanvasBottom"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                      </div>
+                      <div
+                        class="offcanvas offcanvas-bottom popupMusicDiv"
+                        tabindex="-1"
+                        id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <div
+                            class="card mb-3 music-card offCanvasMusicDiv"
+                            style="width: 30%"
+                          >
+                            <div class="row g-0">
+                              <div class="col-md-4 imgDiv offCanvasMusic">
+                                <img
+                                  src="images/01.jpg"
+                                  class="img-fluid rounded-start"
+                                  alt="..."
+                                />
+                                <button
+                                  class="playBtn2"
+                                  type="button"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasBottom"
+                                  aria-controls="offcanvasBottom"
+                                >
+                                  <i class="fa-solid fa-play"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <p class="card-text onismText">
+                                    onism by John
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-secondary"
+                                      >John lennon</small
+                                    >
+                                  </p>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-ban"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="audioContainer">
+                            <audio
+                              src="audio/Saiyara-Tu-Saiyara.mp3"
+                              class="bg-dark"
+                              controls
+                            ></audio>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-white closeBtn"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 onismDiv">
+                      <div class="card-body">
+                        <p class="card-text onismText">New Skin</p>
+                        <p class="card-text">
+                          <small class="text-secondary">Flume</small>
+                        </p>
+                      </div>
+                      <i class="fa-regular fa-heart profileHeartSymbol2"></i>
+                      <!-- <i class="fa-solid fa-plus profilePlusSymbol"></i> -->
+                      <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid d-flex align-items-center">
+                <span style="width: 10%; color: white; font-size: 1.1rem; padding: 8px 0px;">04</span>
+                <div class="card mb-3 music-card2" style="width: 90%;margin: 10px;">
+                  <div class="row g-0" style="margin-right: 0px;">
+                    <div class="col-md-3">
+                      <div class="imgDiv2">
+                        <img
+                          src="images/party/02.jpg"
+                          class="img-fluid rounded-start"
+                          alt="img"
+                        />
+
+                        <button
+                          class="playBtn4"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom"
+                          aria-controls="offcanvasBottom"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                      </div>
+                      <div
+                        class="offcanvas offcanvas-bottom popupMusicDiv"
+                        tabindex="-1"
+                        id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <div
+                            class="card mb-3 music-card offCanvasMusicDiv"
+                            style="width: 30%"
+                          >
+                            <div class="row g-0">
+                              <div class="col-md-4 imgDiv offCanvasMusic">
+                                <img
+                                  src="images/01.jpg"
+                                  class="img-fluid rounded-start"
+                                  alt="..."
+                                />
+                                <button
+                                  class="playBtn2"
+                                  type="button"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasBottom"
+                                  aria-controls="offcanvasBottom"
+                                >
+                                  <i class="fa-solid fa-play"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <p class="card-text onismText">
+                                    onism by John
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-secondary"
+                                      >John lennon</small
+                                    >
+                                  </p>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-ban"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="audioContainer">
+                            <audio
+                              src="audio/Saiyara-Tu-Saiyara.mp3"
+                              class="bg-dark"
+                              controls
+                            ></audio>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-white closeBtn"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 onismDiv">
+                      <div class="card-body">
+                        <p class="card-text onismText">Mirage</p>
+                        <p class="card-text">
+                          <small class="text-secondary">Else</small>
+                        </p>
+                      </div>
+                      <i class="fa-regular fa-heart profileHeartSymbol2"></i>
+                      <!-- <i class="fa-solid fa-plus profilePlusSymbol"></i> -->
+                      <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid d-flex align-items-center">
+                <span style="width: 10%; color: white; font-size: 1.1rem; padding: 8px 0px;">05</span>
+                <div class="card mb-3 music-card2" style="width: 90%;margin: 10px;">
+                  <div class="row g-0" style="margin-right: 0px;">
+                    <div class="col-md-3">
+                      <div class="imgDiv2">
+                        <img
+                          src="images/party/01.jpg"
+                          class="img-fluid rounded-start"
+                          alt="img"
+                        />
+
+                        <button
+                          class="playBtn4"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom"
+                          aria-controls="offcanvasBottom"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                      </div>
+                      <div
+                        class="offcanvas offcanvas-bottom popupMusicDiv"
+                        tabindex="-1"
+                        id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <div
+                            class="card mb-3 music-card offCanvasMusicDiv"
+                            style="width: 30%"
+                          >
+                            <div class="row g-0">
+                              <div class="col-md-4 imgDiv offCanvasMusic">
+                                <img
+                                  src="images/01.jpg"
+                                  class="img-fluid rounded-start"
+                                  alt="..."
+                                />
+                                <button
+                                  class="playBtn2"
+                                  type="button"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasBottom"
+                                  aria-controls="offcanvasBottom"
+                                >
+                                  <i class="fa-solid fa-play"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <p class="card-text onismText">
+                                    onism by John
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-secondary"
+                                      >John lennon</small
+                                    >
+                                  </p>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-ban"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="audioContainer">
+                            <audio
+                              src="audio/Saiyara-Tu-Saiyara.mp3"
+                              class="bg-dark"
+                              controls
+                            ></audio>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-white closeBtn"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 onismDiv">
+                      <div class="card-body">
+                        <p class="card-text onismText">Wory Bout us</p>
+                        <p class="card-text">
+                          <small class="text-secondary">Rosie Lowe</small>
+                        </p>
+                      </div>
+                      <i class="fa-regular fa-heart profileHeartSymbol2"></i>
+                      <!-- <i class="fa-solid fa-plus profilePlusSymbol"></i> -->
+                      <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid d-flex align-items-center">
+                <span style="width: 10%; color: white; font-size: 1.1rem; padding: 8px 0px;">06</span>
+                <div class="card mb-3 music-card2" style="width: 90%;margin: 10px;">
+                  <div class="row g-0" style="margin-right: 0px;">
+                    <div class="col-md-3">
+                      <div class="imgDiv2">
+                        <img
+                          src="images/01.jpg"
+                          class="img-fluid rounded-start"
+                          alt="img"
+                        />
+
+                        <button
+                          class="playBtn4"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom"
+                          aria-controls="offcanvasBottom"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                      </div>
+                      <div
+                        class="offcanvas offcanvas-bottom popupMusicDiv"
+                        tabindex="-1"
+                        id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <div
+                            class="card mb-3 music-card offCanvasMusicDiv"
+                            style="width: 30%"
+                          >
+                            <div class="row g-0">
+                              <div class="col-md-4 imgDiv offCanvasMusic">
+                                <img
+                                  src="images/01.jpg"
+                                  class="img-fluid rounded-start"
+                                  alt="..."
+                                />
+                                <button
+                                  class="playBtn2"
+                                  type="button"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasBottom"
+                                  aria-controls="offcanvasBottom"
+                                >
+                                  <i class="fa-solid fa-play"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <p class="card-text onismText">
+                                    onism by John
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-secondary"
+                                      >John lennon</small
+                                    >
+                                  </p>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-ban"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="audioContainer">
+                            <audio
+                              src="audio/Saiyara-Tu-Saiyara.mp3"
+                              class="bg-dark"
+                              controls
+                            ></audio>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-white closeBtn"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 onismDiv">
+                      <div class="card-body">
+                        <p class="card-text onismText">Mirage</p>
+                        <p class="card-text">
+                          <small class="text-secondary">Else</small>
+                        </p>
+                      </div>
+                      <i class="fa-regular fa-heart profileHeartSymbol2"></i>
+                      <!-- <i class="fa-solid fa-plus profilePlusSymbol"></i> -->
+                      <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid d-flex align-items-center">
+                <span style="width: 10%; color: white; font-size: 1.1rem; padding: 8px 0px;">07</span>
+                <div class="card mb-3 music-card2" style="width: 90%;margin: 10px;">
+                  <div class="row g-0" style="margin-right: 0px;">
+                    <div class="col-md-3">
+                      <div class="imgDiv2">
+                        <img
+                          src="images/party/03.jpg"
+                          class="img-fluid rounded-start"
+                          alt="img"
+                        />
+
+                        <button
+                          class="playBtn4"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom"
+                          aria-controls="offcanvasBottom"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                      </div>
+                      <div
+                        class="offcanvas offcanvas-bottom popupMusicDiv"
+                        tabindex="-1"
+                        id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <div
+                            class="card mb-3 music-card offCanvasMusicDiv"
+                            style="width: 30%"
+                          >
+                            <div class="row g-0">
+                              <div class="col-md-4 imgDiv offCanvasMusic">
+                                <img
+                                  src="images/01.jpg"
+                                  class="img-fluid rounded-start"
+                                  alt="..."
+                                />
+                                <button
+                                  class="playBtn2"
+                                  type="button"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasBottom"
+                                  aria-controls="offcanvasBottom"
+                                >
+                                  <i class="fa-solid fa-play"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <p class="card-text onismText">
+                                    onism by John
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-secondary"
+                                      >John lennon</small
+                                    >
+                                  </p>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-ban"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="audioContainer">
+                            <audio
+                              src="audio/Saiyara-Tu-Saiyara.mp3"
+                              class="bg-dark"
+                              controls
+                            ></audio>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-white closeBtn"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 onismDiv">
+                      <div class="card-body">
+                        <p class="card-text onismText">Wory Bout us</p>
+                        <p class="card-text">
+                          <small class="text-secondary">Rosie Lowe</small>
+                        </p>
+                      </div>
+                      <i class="fa-regular fa-heart profileHeartSymbol2"></i>
+                      <!-- <i class="fa-solid fa-plus profilePlusSymbol"></i> -->
+                      <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid d-flex align-items-center">
+                <span style="width: 10%; color: white; font-size: 1.1rem; padding: 8px 0px;">08</span>
+                <div class="card mb-3 music-card2" style="width: 90%;margin: 10px;">
+                  <div class="row g-0" style="margin-right: 0px;">
+                    <div class="col-md-3">
+                      <div class="imgDiv2">
+                        <img
+                          src="images/02.jpg"
+                          class="img-fluid rounded-start"
+                          alt="img"
+                        />
+
+                        <button
+                          class="playBtn4"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasBottom"
+                          aria-controls="offcanvasBottom"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                      </div>
+                      <div
+                        class="offcanvas offcanvas-bottom popupMusicDiv"
+                        tabindex="-1"
+                        id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <div
+                            class="card mb-3 music-card offCanvasMusicDiv"
+                            style="width: 30%"
+                          >
+                            <div class="row g-0">
+                              <div class="col-md-4 imgDiv offCanvasMusic">
+                                <img
+                                  src="images/01.jpg"
+                                  class="img-fluid rounded-start"
+                                  alt="..."
+                                />
+                                <button
+                                  class="playBtn2"
+                                  type="button"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasBottom"
+                                  aria-controls="offcanvasBottom"
+                                >
+                                  <i class="fa-solid fa-play"></i>
+                                </button>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <p class="card-text onismText">
+                                    onism by John
+                                  </p>
+                                  <p class="card-text">
+                                    <small class="text-secondary"
+                                      >John lennon</small
+                                    >
+                                  </p>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-ban"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="audioContainer">
+                            <audio
+                              src="audio/Saiyara-Tu-Saiyara.mp3"
+                              class="bg-dark"
+                              controls
+                            ></audio>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close btn-close-white closeBtn"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 onismDiv">
+                      <div class="card-body">
+                        <p class="card-text onismText">New Skin</p>
+                        <p class="card-text">
+                          <small class="text-secondary">Flume</small>
+                        </p>
+                      </div>
+                      <i class="fa-regular fa-heart profileHeartSymbol2"></i>
+                      <!-- <i class="fa-solid fa-plus profilePlusSymbol"></i> -->
+                      <!-- <p class="fourPointFour text-secondary">4.44</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

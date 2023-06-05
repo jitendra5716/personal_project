@@ -1,0 +1,68 @@
+#container{
+    height: 99vh;
+    width: 100%;
+    position: relative;
+}
+.outerDiv{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+#innerDiv{
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+.btn{
+    height: 2.5rem;
+    width: 10rem;
+    padding: 8px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: orange;
+    /* color: ; */
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.changeColor{
+    display: inline-block;
+    position: absolute;
+    top: 66%;
+    left: 42%;
+}
+.changeShape{
+    display: inline-block;
+    position: absolute;
+    top: 75%;
+    left: 42%;
+}
+.square{
+    height: 100px;
+    width: 100px;
+}
+.triangle{
+    height: 0px;
+    width: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid white;
+    background-color: inherit !important;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* background-color:black; */
+}

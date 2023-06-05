@@ -1,0 +1,475 @@
+body{
+    margin: 0px;
+}
+
+/* Common */
+.text-center{
+    text-align: center;
+}
+.highlight-text{
+    color:#2857a4;
+}
+.mb-75{
+    margin-bottom: 75px;
+}
+section{
+    /* height: 75vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n){
+    background-color: #eff0f0;
+}
+section:nth-child(2n+1){
+    background-color: #fff;
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+/* Header  */
+
+#body-header{
+    height: 65vh;
+    background-image: url(image/macbook_mouse.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    background-attachment:fixed;
+}
+
+/* Nav  */
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li{
+   display: inline-block;
+   margin: 18px 18px 0px 0px;
+   font-weight: 100;
+   font-size: 1.1rem;
+}
+.horizontal-list li a{
+    color: #fff;
+    text-decoration: none; 
+}
+.nav-menu li a{
+    transition: color 0.5s border-bottom 4s;
+}
+.nav-menu li a:hover{
+    color: lightgray;
+    border-bottom: 1px solid white;
+}
+
+/* Name and social Icon */
+#name-social-container{
+   margin-top: 17vh;
+}
+#name-heading{
+    color: #fff;
+    font-size: 3.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.social-icon li a i{
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 10px;
+}
+.social-icon li a i:hover{
+    box-shadow: 0px 0px 4px 6px rgba(230,196,196,0.3);
+}
+
+/* About section  */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+    margin-bottom: 5vh;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#about p{
+    width: 70%;
+    font-size: 1.3rem;
+    margin: auto;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: justify;
+    letter-spacing: 1.3;
+}
+
+/* Skills Section  */t
+#skills{
+    width: 70%;
+}
+.skills-display{
+    /* border: 1px solid black; */
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding-bottom: 25px;
+    /* height: 140px; */
+}
+
+.skill-progress{
+    height: 1.8rem;
+    width: 8rem;
+    /* border: 1px solid rgb(27, 24, 27); */
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    /* position: relative; */
+    margin: 30px 10px;
+}
+
+.skill-name span{
+    color: white;
+    margin-left: 15px;
+    display: inline-block;
+    margin-top: 0.4rem;
+}
+
+/* Common percentage class  */
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+    border-radius: 0.8rem 0 0 0.8rem;
+}
+.seventy-five-percent{
+    width: 75%;
+    height: inherit;
+    border-radius: 0.8rem 0 0 0.8rem;
+}
+.sixty-five-percent{
+    width: 65%;
+    height: inherit;
+    border-radius: 0.8rem 0 0 0.8rem;
+}
+.ninety-percent{
+    width: 90%;
+    height: inherit;
+    border-radius: 0.8rem 0 0 0.8rem;
+}
+.fifty-percent{
+    width: 50%;
+    height: inherit;
+    border-radius: 0.8rem 0 0 0.8rem;
+}
+
+/* Common color Class */
+.mb-blue{
+    background-color: #2857a4;
+}
+.mb-tomato{
+    background-color:tomato;
+}
+.mb-cyan{
+    background-color: rgb(89, 94, 11);
+}
+.mb-brown{
+    background-color: brown;
+}
+.mb-orange{
+    background-color: orange;
+}
+.mb-green{
+    background-color: green;
+}
+
+
+/* Portfolio section  */
+
+.portfolio-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 4rem;
+}
+.portfolio{
+    height: 220px;
+    width: 260px;
+    /* border: 2px solid black; */
+    position: relative;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.portfolio-desc{
+    top:0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    background-color: #959698;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+    border-radius: inherit;
+    padding: inherit;
+}
+.portfolio:hover .portfolio-desc{
+    visibility: visible;
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 6px #c5f6fa;
+}
+.portfolio-desc p{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f8f9fa;
+}
+.portfolio img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+ /* Contact Section  */
+ #contact{
+    background: linear-gradient(70deg,#2857a4,#7b5084 120%);
+    height: auto;
+    width: 100%;
+ }
+ #contact span{
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 2rem;
+ }
+ #contact-info-div{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+ }
+ .contact-form{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid white; */
+    padding: 20px 0px;
+ }
+ .contact-form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    
+ }
+ .contact-form form input{
+    background: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    color: white;
+    /* font-size: 1.1rem; */
+    width: 70%;
+    padding: 20px 0px;
+    
+ }
+ .contact-form form textarea{
+    background: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    width: 70%;
+    padding: 20px 0px;
+    color: white;
+ }
+
+ .contact-info{
+    height: 100%;
+    width: 40%;
+    /* border:  1px solid white; */
+ }
+ #submit_btn{
+    height: 2rem;
+    width: 8rem;
+    display: inline-block;
+    color: #fff;
+    background-color: inherit;
+    outline: none;
+    border: 2px solid white;
+ }
+ .contact-info{
+    color: #fff;
+ }
+ .contact-info div{
+    margin: 1.5rem 0;
+ }
+ .contact-info p{
+    font-size: 1.1rem;
+ }
+ .details{
+    margin-left: 10px;
+ }
+
+ /* Work Experience */
+ #timeline{
+    width: 75%;
+    height: auto;
+    /* border: 2px solid black; */
+    position: relative;
+ }
+ .timeline-box{
+    height: 200px;
+    width: 40%;
+    /* border: 1px solid black; */
+    position: relative;
+    left: 3%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* padding: 20px; */
+ }
+ .timeline-box:nth-child(2n){
+    left: 53%;
+ }
+ .timeline-divider{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    border: 2px dashed #74c0fc;
+    height: 75%;
+    width: 0%;
+ }
+ .timeline-traveller{
+    position: sticky;
+    transform: rotate(90deg);
+    top: 25%;
+    color: #2857a4;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: -14px;
+    z-index: 2;
+ }
+ .timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    border: 2px solid #adb5bd;
+    border-radius: 50%;
+    top: 35%;
+    background-color: #adb5bd;
+    right: -16.5%;
+    z-index: 1;
+ }
+ .timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    border: 2px solid #adb5bd;
+    border-radius: 50%;
+    top: 35%;
+    background-color: #adb5bd;
+    left: -10.5%;
+    z-index: 1;
+ }
+
+ @media screen and (max-width:768px){
+    .timeline-divider{
+        left: 8%;
+    }
+    .timeline-box{
+        left: 13% !important;
+        width: 80%;
+    }
+    .timeline-box:nth-child(2n+1)::after{
+        left: -10.5%;
+    }
+    .contact-form{
+        width: 80%;
+    }
+    .contact-info{
+        width: 80%;
+    }
+
+ }
+ .timeline-box h2{
+    margin: 5px 5px;
+    text-align:right;
+ }
+ .timeline-box h4{
+    margin: 5px 5px;
+    text-align:right;
+ }
+ .timeline-box h5{
+    margin: 5px 5px;
+    text-align:right;
+ }
+ .timeline-box p{
+    margin: 5px 5px;
+    text-align:right;
+ }
+ .timeline-box h2{
+    color: #2857a4;
+ }
+ .timeline-box h4{
+    color: orange;
+ }
+ .timeline-box h5{
+    font-size: 0.9rem;
+    color: gray;
+ }
+ .timeline-box p{
+    text-align: justify;
+    color: #959698;
+ }
+ .timeline-box h2::before{
+    content: '';
+    background-image: url(/image/asset_0000000000000032_1550746413_iiitd_logo.png);
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    background-size: contain;
+    left: 3%;
+    background-repeat: no-repeat;
+
+ }
+ .education-box h2::before{
+    content: '';
+    background-image: url(/image/asset_0000000000000030_1550710829_ninjasicon.png);
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    background-size: contain;
+    left: 3%;
+    background-repeat: no-repeat;
+ }
+
+

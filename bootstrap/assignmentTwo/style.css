@@ -1,0 +1,51 @@
+.searchInput{
+    outline: none !important;
+    /* border: none !important; */
+    border-radius: 0px !important;
+}
+.searchInput:focus{
+    outline: none;
+    border: none;
+    box-shadow: none !important;
+}
+.searchInput:active{
+    box-shadow: none !important;
+}
+/* Main  */
+.mainContainer{
+    background-image: url(images/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    /* height: 80vh; */
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    margin-bottom: -4px;
+}
+
+/* jumbotron */
+.jumbotron{
+    background-color: #3bc9db;
+    margin: 4rem auto !important;
+    height: auto !important;
+    overflow: hidden;
+    width: 80%;
+}
+.display-4{
+    font-size: 4.5rem;
+}
+.jumbotron-text{
+    text-align: left !important;
+    letter-spacing: 1.2;
+    font-size: 1.1rem;
+}
+.detailsBtn{
+    position: absolute;
+    bottom: 1rem;
+    left: 17%;
+}
+.card{
+    height: 40vh;
+}

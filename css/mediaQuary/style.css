@@ -1,0 +1,19 @@
+#container{
+    width: 60%;
+    height: auto;
+    border: 2px solid black;
+    background-color: brown;
+    color: #fff;
+}
+@media screen and (max-width:600px){
+  #container{
+    width: 100%;
+    background-color: midnightblue;
+  }
+}
+@media screen and (max-width:900px) and (min-width:600px){
+    #container{
+        width: 90%;
+        background-color: black;
+    }
+}

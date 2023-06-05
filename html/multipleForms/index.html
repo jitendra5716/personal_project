@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Forms</title>
+  </head>
+  <body>
+    <h2>Already Registered? <u>LOGIN </u> now</h2>
+    <form>
+      <label for="email">Email </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="abc@gmail.com"
+        required
+      />
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required />
+      <button type="submit">
+        <img src="static/logo.png" alt="logo_btn" height="10" width="24" />
+        Login
+      </button>
+    </form>
+    <hr />
+    <h3>
+      <a href="https://www.codingninjas.in" target="_blank"
+        >Coding Ninjas Blogs</a
+      >
+    </h3>
+    <img src="static/header_image.png" alt="header_img" />
+    <hr />
+    <h2><u>REGISTRATION</u></h2>
+    <form>
+      <table >
+        <tr>
+          <td><label for="fname">First Name:</label></td>
+          <td colspan="2"><input type="text" id="fname" name="fname" required/></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Last Name:</label></td>
+            <td colspan="2"><input type="text" name="lname" id="lname" required></td>
+        </tr>
+        <tr>
+            <td rowspan="3">Current Address:</td>
+            <td><label for="flatNo">Flat No./House No.</label></td>
+            <td><input type="text" id="flatNo" name="flatNo" required></td>
+        </tr>
+        <tr>
+            <td><label for="locality">Locality</label></td>
+            <td><input type="text" id="locality" name="locality" required></td>
+        </tr>
+        <tr>
+            <td><label for="city">City</label></td>
+            <td><input type="text" id="city" name="city" required></td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="isSameAdd">Is Current address and Permanent address same?</label></td>
+            <td><input checked type="radio" value="yes" name="isSameAdd" id="isSameAdd">Yes
+                <input  type="radio" id="isSameAdd" name="isSameAdd" value="no">No</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td> <input type="email" id="email" name="email" required></td> 
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Register</button>
+            </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

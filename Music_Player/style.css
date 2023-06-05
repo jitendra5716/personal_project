@@ -1,0 +1,405 @@
+#project{
+    background-color: #131d51;
+}
+.container{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+/* Navbar */
+.iconDiv{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #fff;
+}
+.mic-icon{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #fff;
+}
+.iconDiv input{
+    text-align: center;
+    background-color: #01135a;
+    outline: none;
+    border: none;
+}
+.iconDiv input:focus{
+    background-color: #364fc7;
+    /* border: none; */
+    box-shadow: none;
+    color: #fff;
+}
+.iconDiv input::placeholder{
+    color: #fff;
+}
+
+/* Heading  */
+.heading-img{
+    height: 240px;
+    width: 30%;
+    opacity: 0.7;
+    transition: all 0.5s ease-in-out;
+}
+.heading-img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+}
+.heading-img:hover{
+    transform: scale(1.1);
+}
+.music-card{
+    height: 80px;
+    background-color: inherit;
+    border: none;
+}
+.music-card p{
+    margin-bottom: 0px;
+    color: #fff;
+}
+.imgDiv{
+    position: relative;
+    height: 80px;
+}
+.imgDiv img{
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+.playBtn{
+    position: absolute;
+    left: 35%;
+    top: 21%;
+    background-color: inherit;
+    visibility: hidden;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    opacity: 0;
+}
+.imgDiv:hover .playBtn{
+    visibility: visible;
+    opacity: 0.7;
+}
+.onismDiv{
+    position: relative;
+}
+.dotIcon{
+    position: absolute;
+    right:3%;
+    top: 3%;
+    display: inline-block;
+}
+.dotIconBtn{
+    background-color: inherit;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+.actionMenu{
+    background-color: #f1f3f5;
+    opacity: 0.9;
+}
+.actionMenu li{
+    border-bottom: 1px solid gray;
+}
+.actionMenu i{
+    color: #495057;
+    margin-right: 5px;
+}
+.fourPointFour{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    color: gray;
+    font-size: 0.7rem;
+}
+.onismText{
+    font-size: 1.1rem;
+}
+
+/* OffCanvas */
+.popupMusicDiv{
+    background-color: #343a40;
+    height: auto !important;
+    color: white;
+}
+.offcanvas-header {
+    position: relative;
+}
+.closeBtn{
+    position: absolute;
+    right: 1%;
+    top: 15%;
+    border: none;
+    outline: none;
+}
+.closeBtn:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.closeBtn img{
+    color: white !important;
+    background-color: white !important;
+    border: none;
+}
+.offCanvasMusicDiv .fa-heart{
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    color: #fff;
+}
+.fa-ban{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+.musicImgDiv{
+    height: 60px;
+    width: 40%;
+
+}
+.musicImgDiv img{
+    height: 100%;
+    width: 100%;
+}
+.offCanvasMusicDiv{
+    background-color: inherit !important;
+    margin: 0px 30px;
+    color: #fff;
+    height: 60px !important;
+    border: none;
+}
+.offCanvasMusic{
+position: relative;
+}
+.offCanvasMusic img{
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+}
+.card-body{
+    padding: 5px 10px !important;
+}
+.offcanvas-header{
+    padding: 10px 40px !important;
+}
+.audioContainer{
+    background-color: inherit;
+}
+.audioContainer audio{
+    background-color: inherit !important;
+}
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 400px;
+    height: 35px;
+    margin-right: 400px;
+    background-color: inherit !important;
+}
+/* audio::-webkit-media-controls-play-button, */
+     audio::-webkit-media-controls-panel {
+     /* background-color: #000; */
+     color: #fff;
+     }
+     audio::-webkit-media-controls-play-button{
+        color: #fff;
+     }
+     audio::-webkit-media-controls-timeline-container{
+        background-color: #fff;
+        color: #fff;
+     }
+
+.playBtn2{
+    position: absolute;
+    left: 40%;
+    top: 22%;
+    background-color: inherit;
+    visibility: hidden;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    opacity: 0;
+}
+.offCanvasMusic:hover .playBtn2{
+    visibility: visible;
+    opacity: 0.7;
+}
+ /* Artist  */
+ .singerContainer{
+    flex-wrap: wrap;
+ }
+.singerDiv{
+    height: 140px;
+    width: 16%;
+    /* flex-wrap: wrap; */
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.singerDiv img{
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+}
+.singerPlayBtn{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    color: #fff;
+    visibility: hidden;
+    font-size: 2rem;
+}
+.singerDiv:hover .singerPlayBtn{
+    visibility: visible;
+    color: gray;
+}
+/* singer Icon  */
+.singerIconDiv{
+    height: 80px;
+    width: 16%;
+    border-radius: 50%;
+    margin: 5px 10px;
+    position: relative;
+    cursor: pointer;
+}
+.singerIconDiv:hover{
+    opacity: 0.5;
+}
+.singerIconDiv img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+}
+.iconTwoDiv{
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+}
+.iconTwoDiv img{
+    height: 100%;
+    width: 100%;
+}
+.singerIconContainer{
+    background-color: midnightblue;
+    padding: 25px 20px;
+}
+.singerIconText{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    overflow: hidden;
+}
+/* party container  */
+.partyDiv{
+    height: 160px;
+    width: 28%;
+    transition: all 0.4s ease-in-out;
+}
+.partyDiv img{
+    height: 100%;
+    width: 100%;
+}
+.partyDiv:hover{
+    transform: scale(1.1);
+}
+
+/* English song Container */
+.latestEngDiv{
+   height: 180px;
+   width: 15%; 
+   cursor: pointer;
+}
+.latestEngDiv img{
+    height: 70%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+.latestEngDiv p{
+    margin-bottom: 0px;
+    color: lightgray;
+
+}
+.dateText{
+    font-size: 0.9rem;
+}
+
+/* Queue  */
+.queueHeadingDiv{
+    position: relative;
+}
+.queueBodyDiv{
+   height: auto; 
+   display: flex;
+   flex-direction: column;
+}
+.queueSmallText{
+    font-size: 1rem;
+    color: aquamarine;
+}
+.queueBody{
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+    
+}
+.queueCard{
+    height: 60px;
+    width: 500%;
+    position: relative;
+    border: none;
+}
+.queueBody .fa-heart{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: -8px;
+    cursor: pointer;
+}
+.queueImgDiv{
+    /* height: 60px; */
+    position: relative;
+    height: 100%;
+}
+.queueImgDiv img{
+    height: 100%;
+    width: 100%;
+}
+.queueText{
+    font-size: 0.85rem;
+}
+.playBtn3{
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    background-color: inherit;
+    visibility: hidden;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    opacity: 0;
+}
+.queueImgDiv:hover .playBtn3{
+    visibility: visible;
+    opacity: 0.8;
+}

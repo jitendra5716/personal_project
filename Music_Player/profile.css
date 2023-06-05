@@ -1,0 +1,366 @@
+#project{
+    background-color: #131d51;
+}
+.container{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+/* Navbar */
+.iconDiv{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #fff;
+}
+.mic-icon{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #fff;
+}
+.iconDiv input{
+    text-align: center;
+    background-color: #01135a;
+    outline: none;
+    border: none;
+}
+.iconDiv input:focus{
+    background-color: #364fc7;
+    /* border: none; */
+    box-shadow: none;
+    color: #fff;
+}
+.iconDiv input::placeholder{
+    color: #fff;
+}
+
+/* Profile */
+.profileContainer{
+    background:linear-gradient(90deg,#246094,#0a1d67)
+}
+.profileBody{
+    padding: 5rem 2rem;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+.singerImgDiv{
+    height: 380px;
+    
+}
+.singerImgDiv img{
+    height: 100%;
+    width: 100%;
+}
+#playAllBtn{
+    display: inline-block;
+    height: 2.9rem;
+    width: 10rem;
+    background: linear-gradient(90deg,blue,magenta);
+    color: #fff;
+    word-spacing: 1.4;
+    border: none;
+    margin-right: 3.5rem;
+}
+/* heading  */
+.music-card{
+    height: 60px;
+    background-color: inherit;
+    border: none;
+    margin: 2rem 1rem;
+}
+.music-card p{
+    margin-bottom: 0px;
+    color: #fff;
+    
+}
+.imgDiv{
+    position: relative;
+    height: 60px;
+}
+.imgDiv img{
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+.playBtn{
+    position: absolute;
+    left: 31%;
+    top: 25%;
+    background-color: inherit;
+    visibility: hidden;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    opacity: 0;
+}
+.imgDiv:hover .playBtn{
+    visibility: visible;
+    opacity: 0.7;
+}
+.onismDiv{
+    position: relative;
+    height: 80px;
+}
+.dotIcon{
+    position: absolute;
+    right:3%;
+    top: 0;
+    display: inline-block;
+    margin-top: -7px;
+}
+.dotIconBtn{
+    background-color: inherit;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+.actionMenu{
+    background-color: #f1f3f5;
+    opacity: 0.9;
+}
+.actionMenu li{
+    border-bottom: 1px solid gray;
+}
+.actionMenu i{
+    color: #495057;
+    margin-right: 5px;
+}
+.fourPointFour{
+    position: absolute;
+    top: 20%;
+    right: 45%;
+    color: gray;
+    font-size: 0.7rem;
+}
+.onismText{
+    font-size: 1.1rem;
+    margin-top: -8px;
+}
+
+/* OffCanvas */
+.popupMusicDiv{
+    background-color: #343a40;
+    height: auto !important;
+    color: white;
+}
+.offcanvas-header {
+    position: relative;
+}
+.closeBtn{
+    position: absolute;
+    right: 1%;
+    top: 15%;
+    border: none;
+    outline: none;
+}
+.closeBtn:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.closeBtn img{
+    color: white !important;
+    background-color: white !important;
+    border: none;
+}
+.offCanvasMusicDiv .fa-heart{
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    color: #fff;
+}
+.fa-ban{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+.musicImgDiv{
+    height: 60px;
+    width: 40%;
+
+}
+.musicImgDiv img{
+    height: 100%;
+    width: 100%;
+}
+.offCanvasMusicDiv{
+    background-color: inherit !important;
+    margin: 0px 30px;
+    color: #fff;
+    height: 60px !important;
+    border: none;
+}
+.offCanvasMusic{
+position: relative;
+}
+.offCanvasMusic img{
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+}
+.card-body{
+    padding: 5px 10px !important;
+    height: inherit;
+    margin-top: 6px;
+}
+.offcanvas-header{
+    padding: 10px 40px !important;
+}
+.audioContainer{
+    background-color: inherit;
+}
+.audioContainer audio{
+    background-color: inherit !important;
+}
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 400px;
+    height: 35px;
+    margin-right: 400px;
+    background-color: inherit !important;
+}
+/* audio::-webkit-media-controls-play-button, */
+     audio::-webkit-media-controls-panel {
+     /* background-color: #000; */
+     color: #fff;
+     }
+     audio::-webkit-media-controls-play-button{
+        color: #fff;
+     }
+     audio::-webkit-media-controls-timeline-container{
+        background-color: #fff;
+        color: #fff;
+     }
+
+.profileHeartSymbol{
+    color: white;
+    position: absolute;
+    font-size: 1.3rem;
+    top: 26%;
+    right: 7%;
+    cursor: pointer;
+}
+.profilePlusSymbol{
+    color: white;
+    position: absolute;
+    font-size: 1.2rem;
+    top: 26%;
+    right: 2%;
+    cursor: pointer;
+}
+
+/* Queue */
+.SimilarArtistHeading{
+    position: relative;
+}
+.fourPointFourQueue{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    color: gray;
+    font-size: 0.7rem;
+}
+.viewAll{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: aqua;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.playBtn3{
+    position: absolute;
+    left: 33%;
+    top: 31%;
+    background-color: inherit;
+    visibility: hidden;
+    color: #fff;
+    font-size: 1.6rem;
+    border: none;
+    opacity: 0;
+}
+.imgDiv:hover .playBtn3{
+    visibility: visible;
+    opacity: 0.8;
+    
+}
+.music-card2{
+    height: 50px;
+    background-color: inherit;
+    border: none;
+    margin: 2rem 1rem;
+}
+.music-card2 p{
+    margin-bottom: 0px;
+    color: #fff;
+    
+}
+.imgDiv2{
+    position: relative;
+    height: 50px;
+}
+.imgDiv2 img{
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+.profileHeartSymbol2{
+    color: white;
+    position: absolute;
+    font-size: 1rem;
+    top: 26%;
+    right: 5%;
+    cursor: pointer;
+}
+.playBtn4{
+    position: absolute;
+    left: 31%;
+    top: 25%;
+    background-color: inherit;
+    /* visibility: hidden; */
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    opacity: 0;
+}
+.imgDiv2:hover .playBtn4{
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.music-card3{
+    height: 80px;
+    background-color: inherit;
+    border: none;
+    margin: 2rem 1rem;
+}
+.music-card3 p{
+    margin-bottom: 0px;
+    color: #fff;
+    
+}
+.imgDiv3{
+    position: relative;
+    height: 80px;
+}
+.imgDiv3 img{
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+.imgDiv3:hover .playBtn3{
+    visibility: visible;
+    opacity: 0.7;
+}
